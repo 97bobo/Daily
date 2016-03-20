@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Class" syncable="YES">
+        <attribute name="courseDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseRoom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseSection" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseTeacher" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Diary" syncable="YES">
+        <attribute name="diaryContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diaryDate" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Diary" positionX="1161" positionY="5388" width="135" height="73"/>
+        <element name="Class" positionX="1357" positionY="5436" width="128" height="118"/>
+    </elements>
+</model>

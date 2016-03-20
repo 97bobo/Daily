@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sY0-Qp-prZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nhW-cR-TUz">
+            <objects>
+                <tabBarController id="sY0-Qp-prZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VyD-oQ-AQY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JtD-2M-dss" kind="relationship" relationship="viewControllers" id="krC-El-Nhv"/>
+                        <segue destination="GhR-Id-0C1" kind="relationship" relationship="viewControllers" id="RlD-Tn-3iH"/>
+                        <segue destination="ZAK-D8-zBQ" kind="relationship" relationship="viewControllers" id="Td5-XP-yDq"/>
+                        <segue destination="gBs-29-NRU" kind="relationship" relationship="viewControllers" id="KeR-HP-bLl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOQ-FJ-SFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="384"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="pNP-8A-nO4">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="GhR-Id-0C1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" id="NXg-sJ-iyF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kED-5j-iHX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pqO-ZU-hEg" kind="relationship" relationship="rootViewController" id="dig-da-Ckt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v57-59-iKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="627"/>
+        </scene>
+        <!--Discovery View Controller-->
+        <scene sceneID="Izb-18-5iK">
+            <objects>
+                <viewController id="pqO-ZU-hEg" customClass="DiscoveryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJt-RB-I6r"/>
+                        <viewControllerLayoutGuide type="bottom" id="AAb-3b-SKp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Etz-y9-Va4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="162-rF-587">
+                                <rect key="frame" x="20" y="28" width="280" height="204"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBK-vR-fuw">
+                                <rect key="frame" x="20" y="336" width="280" height="126"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOB-dJ-Vkv">
+                                <rect key="frame" x="20" y="243" width="280" height="126"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z5D-9H-rPB"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="fOB-dJ-Vkv" id="3zi-39-G2L"/>
+                        <outlet property="imageView" destination="162-rF-587" id="YrR-bB-hyL"/>
+                        <outlet property="mottoLabel" destination="uBK-vR-fuw" id="a4H-Rg-Jsl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nj-ZD-5yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="627"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0he-Ah-ef7">
+            <objects>
+                <navigationController id="1OT-Jd-Kap" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4fb-o3-MbY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lBn-hP-3Ek" kind="relationship" relationship="rootViewController" id="rWW-bn-cB6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0y-LI-dyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="953"/>
+        </scene>
+        <!--添加课程-->
+        <scene sceneID="W5c-Qn-sDF">
+            <objects>
+                <viewController id="lBn-hP-3Ek" customClass="AddClassViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zGi-AQ-4Z2"/>
+                        <viewControllerLayoutGuide type="bottom" id="sz1-zH-KKY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VWe-r0-iO1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="课程名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVI-wa-DTa">
+                                <rect key="frame" x="20" y="77.5" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上课地点：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0k-6E-1HG">
+                                <rect key="frame" x="20" y="123.5" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上课教师：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-P7-Du6">
+                                <rect key="frame" x="20" y="169.5" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上课时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOJ-cd-ohy">
+                                <rect key="frame" x="118" y="210" width="84" height="26"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iqs-hE-dcD">
+                                <rect key="frame" x="0.0" y="274" width="320" height="118"/>
+                                <animations/>
+                            </pickerView>
+                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-XB-lVm">
+                                <rect key="frame" x="0.0" y="430" width="320" height="118"/>
+                                <animations/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-1d-BpX">
+                                <rect key="frame" x="118" y="73" width="182" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-tt-9Md">
+                                <rect key="frame" x="118" y="119" width="182" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36k-R6-jA9">
+                                <rect key="frame" x="118" y="165" width="182" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bs-Nc-7Us">
+                                <rect key="frame" x="20" y="244" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fop-WK-h5U">
+                                <rect key="frame" x="20" y="400" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加课程" id="nWf-5T-zkA"/>
+                    <connections>
+                        <outlet property="backButton" destination="E1b-AZ-Wu2" id="nr1-vy-m52"/>
+                        <outlet property="classDayTextField" destination="7bs-Nc-7Us" id="vup-X5-4Qh"/>
+                        <outlet property="classNameTextField" destination="DK1-1d-BpX" id="Iut-PP-fct"/>
+                        <outlet property="classSectionTextField" destination="Fop-WK-h5U" id="adr-z5-MAP"/>
+                        <outlet property="classTeacherTextField" destination="36k-R6-jA9" id="BOO-tN-NFD"/>
+                        <outlet property="classroomTextField" destination="bOh-tt-9Md" id="tT2-jy-7Oj"/>
+                        <outlet property="dayPicker" destination="Iqs-hE-dcD" id="P8A-iW-Q6D"/>
+                        <outlet property="saveButton" destination="KE7-DN-bgy" id="GbE-at-awe"/>
+                        <outlet property="sectionPicker" destination="aMo-XB-lVm" id="zxF-RN-V7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEi-P0-QVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9Bz-JL-Ilv" userLabel="Exit" sceneMemberID="exit"/>
+                <barButtonItem title="返回" id="E1b-AZ-Wu2">
+                    <connections>
+                        <segue destination="9Bz-JL-Ilv" kind="unwind" identifier="Back" unwindAction="unwindToCurriculumScheduleViewController:" id="LHP-YL-dKH"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="保存" id="KE7-DN-bgy">
+                    <connections>
+                        <segue destination="9Bz-JL-Ilv" kind="unwind" identifier="Save" unwindAction="unwindToCurriculumScheduleViewController:" id="CaK-IU-70Z"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="2247" y="1325"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="Roj-fC-iKY">
+            <objects>
+                <navigationController id="gBs-29-NRU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="设置" id="ICi-Ka-vXn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="88P-Md-AhS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="NMI-FM-Shj">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="CuT-c8-AQY" kind="relationship" relationship="rootViewController" id="xfP-84-tkJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVY-eO-Qim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="2111"/>
+        </scene>
+        <!--课程表-->
+        <scene sceneID="z58-dI-jd1">
+            <objects>
+                <navigationController id="ZAK-D8-zBQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="课程表" id="JLg-eW-uEC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Qf-kV-VvE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Skt-PH-URu" kind="relationship" relationship="rootViewController" id="8lo-97-RLI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNU-w4-oZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="1325"/>
+        </scene>
+        <!--课程表-->
+        <scene sceneID="3UX-1K-mLo">
+            <objects>
+                <viewController id="Skt-PH-URu" customClass="CurriculumScheduleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KBR-TA-gcv"/>
+                        <viewControllerLayoutGuide type="bottom" id="mp7-nl-3wd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="djo-LD-RXV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ox-Ae-2zJ">
+                                <rect key="frame" x="42" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周二" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4l-Bu-uaN">
+                                <rect key="frame" x="79" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMt-OZ-nvJ">
+                                <rect key="frame" x="116" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周四" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY0-bv-N6I">
+                                <rect key="frame" x="153" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周五" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-zE-neJ">
+                                <rect key="frame" x="190" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周六" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-vo-C7F">
+                                <rect key="frame" x="227" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-Qz-YVj">
+                                <rect key="frame" x="264" y="72" width="22" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8:00    1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifZ-Ml-aNK">
+                                <rect key="frame" x="0.0" y="94" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:00    2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duv-tC-vJy">
+                                <rect key="frame" x="0.0" y="131" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:10    3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSo-j6-ndK">
+                                <rect key="frame" x="0.0" y="168" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:10    4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwR-i4-oOO">
+                                <rect key="frame" x="0.0" y="205" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13:30    5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doo-5D-Qiy">
+                                <rect key="frame" x="0.0" y="242" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15:30    7" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-dH-T5K">
+                                <rect key="frame" x="0.0" y="316" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="14:30    6" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIv-7I-b7B">
+                                <rect key="frame" x="0.0" y="279" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16:30    8" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lM-Ui-7la">
+                                <rect key="frame" x="0.0" y="353" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19:00    10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8v-HL-1s4">
+                                <rect key="frame" x="0.0" y="427" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18:00    9" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHA-oR-ZAh">
+                                <rect key="frame" x="0.0" y="390" width="33" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="课程表" id="8OV-HE-FHS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="FC8-TM-83D">
+                            <connections>
+                                <segue destination="1OT-Jd-Kap" kind="modal" identifier="CSVCModalToACVC" id="wh7-6E-Y0s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1j-Mf-ivN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="1325"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="CWC-71-B1N">
+            <objects>
+                <viewController id="CuT-c8-AQY" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTG-lG-gbQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="fNg-HD-lxk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nqy-Bu-Eh1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8TT-fQ-7ij">
+                                <rect key="frame" x="136" y="268" width="51" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="nightModeSwitchAction:" destination="CuT-c8-AQY" eventType="valueChanged" id="I3X-A0-uEZ"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tAT-Zg-c8g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ea7-I2-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="2111"/>
+        </scene>
+        <!--Detail Class View Controller-->
+        <scene sceneID="dOa-z4-yuC">
+            <objects>
+                <viewController storyboardIdentifier="DetailClassViewController" id="tiE-7O-QtQ" customClass="DetailClassViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dkY-os-0r5"/>
+                        <viewControllerLayoutGuide type="bottom" id="MhU-IZ-2fE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SN4-QQ-K8p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ud-u6-wXK">
+                                <rect key="frame" x="20" y="72" width="280" height="81"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcY-ed-fON">
+                                <rect key="frame" x="20" y="178" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNR-bT-Kh3">
+                                <rect key="frame" x="20" y="233" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS3-CK-32D">
+                                <rect key="frame" x="20" y="288" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L3-Nz-cZ3">
+                                <rect key="frame" x="20" y="343" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2u-5d-fvS">
+                                <rect key="frame" x="20" y="372" width="280" height="30"/>
+                                <animations/>
+                                <state key="normal" title="删除">
+                                    <color key="titleColor" red="1" green="0.09536215244" blue="0.07678223813" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IRY-KO-C0D" kind="unwind" identifier="Delete" unwindAction="unwindToCurriculumScheduleViewController:" id="1gN-cc-xch"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sfo-1x-aj9"/>
+                    <connections>
+                        <outlet property="classDayLabel" destination="tS3-CK-32D" id="chH-JC-j6r"/>
+                        <outlet property="classNameLabel" destination="4Ud-u6-wXK" id="Cks-KZ-j3F"/>
+                        <outlet property="classSectionLabel" destination="1L3-Nz-cZ3" id="gRW-88-m4m"/>
+                        <outlet property="classTeacherLabel" destination="TNR-bT-Kh3" id="TYI-FG-x8g"/>
+                        <outlet property="classroomLabel" destination="FcY-ed-fON" id="Fqx-dR-22O"/>
+                        <outlet property="editButton" destination="O50-cD-6cM" id="tWr-so-bNH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EoY-qJ-bjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IRY-KO-C0D" userLabel="Exit" sceneMemberID="exit"/>
+                <barButtonItem title="编辑" id="O50-cD-6cM">
+                    <connections>
+                        <segue destination="1OT-Jd-Kap" kind="modal" identifier="DCVCModalToACVC" id="mgk-96-byw"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="1786" y="1715"/>
+        </scene>
+        <!--日记-->
+        <scene sceneID="S60-wo-i7C">
+            <objects>
+                <tableViewController id="uKD-OU-btV" customClass="DailyTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ARz-JY-eZE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="xr4-f2-2C0" detailTextLabel="aKV-JA-DF4" style="IBUITableViewCellStyleSubtitle" id="2v7-2t-F3Y">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2v7-2t-F3Y" id="NUO-vl-1Sr">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xr4-f2-2C0">
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aKV-JA-DF4">
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="muX-VF-z5p" kind="push" identifier="TypeSegue" id="KKc-Xt-jxw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uKD-OU-btV" id="bMg-rt-qCI"/>
+                            <outlet property="delegate" destination="uKD-OU-btV" id="VTx-zy-wm1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="日记" id="ixw-5J-bD7"/>
+                    <connections>
+                        <outlet property="addButton" destination="j7W-B8-0Oq" id="M64-Vr-oLY"/>
+                        <outlet property="cancelButton" destination="Day-2c-hIC" id="9JM-yk-iCF"/>
+                        <outlet property="deleteButton" destination="UPb-va-e2C" id="1Ka-xf-ZXN"/>
+                        <outlet property="editButton" destination="xWD-ZZ-AvP" id="kLu-hm-j0R"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fx6-QE-mBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem systemItem="add" id="j7W-B8-0Oq" userLabel="AddButton">
+                    <connections>
+                        <action selector="addAction:" destination="uKD-OU-btV" id="xVr-ZT-2jM"/>
+                        <segue destination="KhE-ml-yNF" kind="modal" identifier="AddSegue" id="bwH-am-5tS"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="编辑" id="xWD-ZZ-AvP" userLabel="EditButton">
+                    <connections>
+                        <action selector="editAction:" destination="uKD-OU-btV" id="H8H-LQ-ivQ"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="取消" style="done" id="Day-2c-hIC" userLabel="CancelButton">
+                    <connections>
+                        <action selector="cancelAction:" destination="uKD-OU-btV" id="kst-CS-fpr"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="删除所有" id="UPb-va-e2C" userLabel="DeleteButton">
+                    <color key="tintColor" red="1" green="0.09536215244" blue="0.07678223813" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="deleteAction:" destination="uKD-OU-btV" id="3G2-ar-eHJ"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="1310" y="-126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HwR-rH-aT7">
+            <objects>
+                <navigationController id="KhE-ml-yNF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dPA-er-Sed">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="muX-VF-z5p" kind="relationship" relationship="rootViewController" id="yn7-24-agJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyD-D3-55j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="-498"/>
+        </scene>
+        <!--Type View Controller-->
+        <scene sceneID="mfb-wr-wzK">
+            <objects>
+                <viewController id="muX-VF-z5p" customClass="TypeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ieH-O9-8i9"/>
+                        <viewControllerLayoutGuide type="bottom" id="N23-KF-E6f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DLX-n5-VnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-dg-XoR">
+                                <rect key="frame" x="20" y="64" width="280" height="468"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="muX-VF-z5p" id="2hU-9O-0q7"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02x-5u-p8g">
+                                <rect key="frame" x="267" y="532" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="muX-VF-z5p" eventType="touchUpInside" id="sbT-JR-N8f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OI9-kq-ueW">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Sao-kF-bsw">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aiy-lS-erL">
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="RcR-ZH-7KD" kind="unwind" identifier="UnwindToDailyTableViewController" unwindAction="unwindToDailyTableViewController:" id="oqr-cX-g72"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="doneButton" destination="Gng-H7-ghw" id="I8D-Na-c1u"/>
+                        <outlet property="editButton" destination="8uU-Eb-NMK" id="QDT-MC-j9M"/>
+                        <outlet property="saveButton" destination="aiy-lS-erL" id="Um3-Rx-mCS"/>
+                        <outlet property="textView" destination="0fG-dg-XoR" id="EFU-el-sVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIZ-Q6-1mQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RcR-ZH-7KD" userLabel="Exit" sceneMemberID="exit"/>
+                <barButtonItem systemItem="compose" id="8uU-Eb-NMK">
+                    <connections>
+                        <action selector="editAction:" destination="muX-VF-z5p" id="FM0-jX-3Pr"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="完成" id="Gng-H7-ghw">
+                    <connections>
+                        <action selector="doneAction:" destination="muX-VF-z5p" id="8Sb-Ms-nNB"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="2247" y="-126"/>
+        </scene>
+        <!--日记-->
+        <scene sceneID="e3z-Yl-3cO">
+            <objects>
+                <navigationController id="JtD-2M-dss" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="日记" id="We6-wg-9Jd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ur-VZ-u0L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kFj-1G-HWY">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="uKD-OU-btV" kind="relationship" relationship="rootViewController" id="TQJ-11-1h8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4u0-3u-frE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="-126"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KKc-Xt-jxw"/>
+        <segue reference="mgk-96-byw"/>
+    </inferredMetricsTieBreakers>
+</document>
